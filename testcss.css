@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f0f0f0;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    min-width: 100vh;
+    display: flex;
+}
+.wapper{
+    display: inline-flex;
+    background-color: #fc0000;
+
+}
+.wapper .dynamic-texts{
+    
+    padding: 0;
+}
+.dynamic-texts li{
+    list-style: none;
+    font-size: 90px;
+    font-weight: 500;
+}
+.dynamic-texts li span{
+   position: relative;
+}
+.dynamic-texts li span::after{
+    content: '';
+    left: 0%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-left: 2px solid #ffadad;
+    animation: typing 4s steps(30) infinite;
+}
+@keyframes typing {
+    100%{
+        left:100%;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .my-fav{
+    font-size: 90px;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 2s steps(13) infinite alternate,
+                blink 800ms steps(13) infinite normal;
+    border-right: 5px solid black;
+}
+
+
+@keyframes typewriter {
+    from {
+        width: 0%;
+    }
+
+    to {
+        width: 50%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: black;
+    }
+
+    to {
+        border-color: transparent;
+    }
+} */
