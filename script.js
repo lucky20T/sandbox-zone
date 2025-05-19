@@ -16,6 +16,13 @@ function typeWriter() {
   }
 
 }
+function nextPage() {
+    document.getElementById("section1").style.display = "none";
+    document.getElementById("section2").style.display = "none";
+
+    const section3 = document.getElementById("section3");
+    section3.classList.add("show");
+}
 document.getElementById("giftImg").addEventListener("click", () => {
     // Play music
     const music = document.getElementById("myMusic");
@@ -77,4 +84,12 @@ document.getElementById("giftImg").addEventListener("touchstart", () => {
     document.getElementById("wapper").classList.remove("hidden"); // show the typewriter text
     typeWriter(); // start typing
 }, 1000);
+
+
+/**
+ * Navigates to the next page by hiding sections 1 and 2,
+ * and displaying section 3 by adding the "show" class.
+ */
+
+
 });

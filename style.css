@@ -80,7 +80,7 @@ body{
         padding: 5px 10px;
     }
     #wapper{
-        
+        max-width: 100vh;
         font-size: 1.5rem;
     }
     #demo{
@@ -112,6 +112,51 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease-in-out;
+}
+.next-btn{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffadad;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+#section3 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+#section3.show {
+    display: block;
+    opacity: 1;
+}
+.image-gallery {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(asset/image/background00.jpg);
+    transition: all 1s ease;
+}
+.gallery{
+    display: flex;
+
+    margin-top: 20px;
+}
+.image-gallery img {
+    width: 200px;
+    height: auto;
+    max-width: 800px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 
