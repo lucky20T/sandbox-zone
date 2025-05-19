@@ -105,7 +105,7 @@ body{
 }
 .next-img {
     width: 200px;
-    height: auto;
+    height: 400px;
     display: none; /* hide it initially */
     position: absolute;
     top: 30%;
@@ -120,21 +120,74 @@ body{
     transform: translate(-50%, -50%);
     background-color: #ffadad;
     color: #fff;
-    padding: 10px 20px;
+    padding: 50px 50px;
     border: none;
     border-radius: 5px;
     font-size: 1.5rem;
     cursor: pointer;
 }
-#section3 {
+#section3{
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.best-wish{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(asset/image/background00.jpg);
+    transition: all 1s ease;
+}
+.wish-img {
+    width: 400px;
+    height: 400px;
+    /* hide it initially */
+    border-radius: 25%;
+    background-color: black;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
+.hidden-btn {
+    display: none;
+    opacity: 0;
+    transition: opacity 1s ease;
+  }
+  
+  .show-btn {
+    display: inline-block;
+    opacity: 1;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffadad;
+    color: #fff;
+    padding: 30px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+  
+#section3.show {
+    display: block;
+    opacity: 1;
+}
+#section4 {
     display: none;
     opacity: 0;
     transition: opacity 0.5s ease;
 }
 
-#section3.show {
+#section4.show {
     display: block;
     opacity: 1;
+    
 }
 .image-gallery {
     position: fixed;
@@ -145,9 +198,14 @@ body{
     background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(asset/image/background00.jpg);
     transition: all 1s ease;
 }
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: #fff;
+    margin-top: 20px;
+}
 .gallery{
     display: flex;
-
     margin-top: 20px;
 }
 .image-gallery img {
@@ -157,6 +215,42 @@ body{
     margin: 10px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+#section5 {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.next-btn2{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffadad;
+    color: #fff;
+    padding: 50px 50px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.love{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to bottom, #ffe1e1, #ff217de0), url(asset/image/background00.jpg);
+    transition: all 1s ease;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+}
+#section5.show {
+    display: block;
+    opacity: 1;
+    
 }
 
 

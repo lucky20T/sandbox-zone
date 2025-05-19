@@ -1,10 +1,16 @@
 // This is a simple JavaScript code that types out a poem letter by letter on a webpage.
 
 var i = 0;
+var j = 0;
 var txt = `It’s for you, my favorite name, 
 In fickling rain, I feel the same.
 Each drop recalls a silent blame,
 Yet still, I whisper you in shame.`;
+var txt2 = `Happy Birthday to you, my love!
+
+May all the happiness in the world knock at your door,
+May life treat you gently, and love find you more.
+Even if our paths grow apart, I’ll always hope you soar`;
 
 var speed = 80; // The speed/duration of the effect in milliseconds
 
@@ -15,13 +21,44 @@ function typeWriter() {
     setTimeout(typeWriter, speed);
   }
 
-}
+};
+
+function typeWriter2() {
+  if (j < txt2.length) {
+    document.getElementById("wish").innerHTML += txt2.charAt(j);
+    j++;
+    setTimeout(typeWriter2, speed);
+  }else {
+    // 🎯 Event is completed here — now show the button
+    setTimeout(() => {
+      const delayedBtn = document.getElementById("delayedBtn");
+      delayedBtn.classList.remove("hidden-btn");
+      delayedBtn.classList.add("show-btn");
+    }, 1000); // 1 second delay (optional)
+  }
+
+};
 function nextPage() {
     document.getElementById("section1").style.display = "none";
     document.getElementById("section2").style.display = "none";
 
     const section3 = document.getElementById("section3");
     section3.classList.add("show");
+}
+function wishPage() {
+  document.getElementById("section1").style.display = "none";
+  document.getElementById("section2").style.display = "none";
+  document.getElementById("section3").style.display = "none";
+  const section4 = document.getElementById("section4");
+  section4.classList.add("show");
+}
+function final() {
+  document.getElementById("section1").style.display = "none";
+  document.getElementById("section2").style.display = "none";
+  document.getElementById("section3").style.display = "none";
+  document.getElementById("section4").style.display = "none";
+  const section5 = document.getElementById("section5");
+  section5.classList.add("show");
 }
 document.getElementById("giftImg").addEventListener("click", () => {
     // Play music
