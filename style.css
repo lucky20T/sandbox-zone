@@ -57,7 +57,8 @@ body{
     font-size: 1.5rem;
     color: #fff;
 }
-.wapper{
+#wapper{
+    
     display: inline-flex;
     position: absolute;
     top: 80%;
@@ -70,33 +71,64 @@ body{
     border-radius: 5px;
     overflow: hidden;
 }
-.wapper .static-text{
-    font-size: 30px;
-    font-weight: 500;
+#wapper .static-text{
+    font-size: 50px;
+    font-weight: 300;
     margin-right: 10px;
     overflow: hidden;
+
     
 }
+#demo{
+    max-width: 18rem;
+    font-size: 1.3rem;
+}
+.hidden {
+   
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 50px;
+  }
+.next{
+    opacity: 0;
+   
+}
+.next-img {
+    width: 200px;
+    height: auto;
+    display: none; /* hide it initially */
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.5s ease-in-out;
+}
 
-.wapper .dynamic-texts{
+
+/* .wapper .dynamic-texts{
     padding: 0;
     overflow: hidden;
     
 }
+button{
+    background-color: #f0f0f0;
+
+} */
+/* 
 .dynamic-texts li{
     top: 0;
     list-style: none;
     font-size: 30px;
     font-weight: 500;
     position: relative;
-    /* animation: sider 20s steps(4) infinite; */
+     animation: sider 20s steps(4) infinite; 
 }
-/* @keyframes sider {
+ @keyframes sider {
     100%{
         top: -130px;
     }
     
-} */
+} 
 .dynamic-texts li span{
    position: relative;
 }
@@ -116,4 +148,4 @@ body{
         margin: 0 -45px 0 45px;
     }
     
-}
+} */
