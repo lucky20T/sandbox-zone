@@ -49,14 +49,7 @@ body{
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.my-fav{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 1.5rem;
-    color: #fff;
-}
+
 #wapper{
     
     display: inline-flex;
@@ -75,8 +68,25 @@ body{
     font-size: 50px;
     font-weight: 300;
     margin-right: 10px;
-    overflow: hidden;
-
+    overflow: hidden;   
+}
+@media screen and (max-width: 768px) {
+    .gift-img {
+        width: 50%;
+        top: 30%;
+    }
+    .text{
+        font-size: 1.5rem;
+        padding: 5px 10px;
+    }
+    #wapper{
+        
+        font-size: 1.5rem;
+    }
+    #demo{
+      
+        font-size: 0.5rem;
+    }
     
 }
 #demo{
@@ -98,7 +108,7 @@ body{
     height: auto;
     display: none; /* hide it initially */
     position: absolute;
-    top: 40%;
+    top: 30%;
     left: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.5s ease-in-out;

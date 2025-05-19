@@ -16,7 +16,7 @@ function typeWriter() {
   }
 
 }
-document.getElementById("giftImg").addEventListener("click", () => {
+document.getElementById("giftImg").addEventListener("click","touchstart", () => {
     // Play music
     const music = document.getElementById("myMusic");
     music.play();
