@@ -16,7 +16,7 @@ function typeWriter() {
   }
 
 }
-document.getElementById("giftImg").addEventListener("click","touchstart", () => {
+document.getElementById("giftImg").addEventListener("click", () => {
     // Play music
     const music = document.getElementById("myMusic");
     music.play();
@@ -50,3 +50,31 @@ document.getElementById("giftImg").addEventListener("click","touchstart", () => 
 //         document.getElementById("newContent").classList.remove("hidden");
 //     }, 1000); // matches the CSS transition duration
 // });
+document.getElementById("giftImg").addEventListener("touchstart", () => {
+    // Play music
+    const music = document.getElementById("myMusic");
+    music.play();
+
+    // Animate image (scale and fade)
+    const gift = document.getElementById("giftImg");
+    const text = document.getElementById("text-h");
+    const home = document.getElementById("section1");
+    const next = document.getElementById("section2");
+
+    
+    next.style.opacity = "1";
+    text.style.transition = "transform 1s ease, opacity 1s ease";
+    text.style.transform = "scale(0)";
+    text.style.opacity = "0";  
+
+    gift.style.transform = "scale(7)";
+    gift.style.opacity = "0";
+
+    // After animation, hide image and show new content
+    setTimeout(() => {
+    gift.style.display = "none";
+    document.querySelector(".next-img").style.display = "block"; // show the image
+    document.getElementById("wapper").classList.remove("hidden"); // show the typewriter text
+    typeWriter(); // start typing
+}, 1000);
+});
