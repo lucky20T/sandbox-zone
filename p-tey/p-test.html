@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishal Chakradhari - Web & Game Dev</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/icons/favicon.png" type="image/png">
+</head>
+<body>
+    <header class="main-header">
+        <nav class="navbar">
+            <a href="#" class="logo">Vishal</a>
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="dark-mode-toggle">
+                <input type="checkbox" id="dark-mode-switch" />
+                <label for="dark-mode-switch"></label>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="hero-content">
+                <h1 class="hero-title">Hi, I'm <span class="highlight">Vishal Chakradhari</span></h1>
+                <p class="hero-subtitle">A Web Developer & Game Dev Enthusiast</p>
+                <p class="hero-tagline">Building immersive digital experiences, one line of code at a time.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn primary-btn">View Projects</a>
+                    <a href="assets/Vishal_Chakradhari_Resume.pdf" download class="btn secondary-btn">Download Resume</a>
+                </div>
+            </div>
+            <div class="hero-animation-overlay"></div>
+        </section>
+
+        <section id="about" class="about-section">
+            <div class="container">
+                <h2 class="section-title">About Me</h2>
+                <div class="about-content">
+                    <div class="about-image-container">
+                        <img src="assets/images/your-photo.png" alt="Vishal Chakradhari" class="about-image">
+                    </div>
+                    <div class="about-text">
+                        <p>Hey there! I'm Vishal Chakradhari, a passionate and driven developer currently pursuing my **B.Tech in Computer Science and Technology** at Sage University, Indore. My journey into tech started with a fascination for how digital worlds are built, leading me down the exciting paths of web development and game creation.</p>
+                        <p>I love bringing ideas to life through code, whether it's crafting responsive and dynamic web applications or diving into the logic and design of games. I'm constantly learning and expanding my toolkit, currently focusing on mastering advanced web technologies and exploring game development frameworks.</p>
+                        <p>When I'm not coding, you can find me exploring new game mechanics, contributing to open-source projects, or diving deep into tech blogs to stay ahead of the curve. Let's connect and build something amazing!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">My Skillset</h2>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3>Programming</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">C++</span>
+                            <span class="skill-item">Python</span>
+                            <span class="skill-item">JavaScript</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Frontend</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">React (Conceptual)</span>
+                            <span class="skill-item">HTML5</span>
+                            <span class="skill-item">CSS3</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Game Dev</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Blender (Basic)</span>
+                            <span class="skill-item">Unreal EU.5 (Learning)</span>
+                            <span class="skill-item">C++ (for Unreal EU.5)</span>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3>Tools & Others</h3>
+                        <div class="skill-list">
+                            <span class="skill-item">Git</span>
+                            <span class="skill-item">GitHub</span>
+                            <span class="skill-item">VS Code</span>
+                            <span class="skill-item">Express.js (Learning)</span>
+                            <span class="skill-item">Node.js (Learning)</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">My Creations</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="assets/images/project1.jpg" alt="Game Dev Portfolio" class="project-image">
+                        <div class="project-info">
+                            <h3>Game Dev Portfolio</h3>
+                            <p class="project-description">A showcase of my game development projects, including 3D models and Unity prototypes, demonstrating core mechanics.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">Unity</span>
+                                <span class="tech-tag">C#</span>
+                                <span class="tech-tag">Blender</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/VishalChakradhari/game-dev-portfolio" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <img src="assets/icons/github.svg" alt="GitHub" class="link-icon"> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <img src="assets/icons/external-link.svg" alt="Live Demo" class="link-icon"> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/project2.jpg" alt="E-commerce Web App" class="project-image">
+                        <div class="project-info">
+                            <h3>E-commerce Web App</h3>
+                            <p class="project-description">A full-stack e-commerce platform with user authentication, product listings, and a functional shopping cart.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Node.js (Express)</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/VishalChakradhari/ecommerce-app" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <img src="assets/icons/github.svg" alt="GitHub" class="link-icon"> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <img src="assets/icons/external-link.svg" alt="Live Demo" class="link-icon"> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="assets/images/project3.jpg" alt="Interactive Dashboard" class="project-image">
+                        <div class="project-info">
+                            <h3>Interactive Dashboard</h3>
+                            <p class="project-description">A responsive data visualization dashboard displaying mock real-time data with interactive charts.</p>
+                            <div class="project-tech">
+                                <span class="tech-tag">HTML</span>
+                                <span class="tech-tag">CSS</span>
+                                <span class="tech-tag">JavaScript</span>
+                                <span class="tech-tag">Chart.js</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="https://github.com/VishalChakradhari/interactive-dashboard" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <img src="assets/icons/github.svg" alt="GitHub" class="link-icon"> GitHub
+                                </a>
+                                <a href="#" class="project-link">
+                                    <img src="assets/icons/external-link.svg" alt="Live Demo" class="link-icon"> Live Demo
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="contact-content">
+                    <p class="contact-intro">Have a project idea, a question, or just want to chat about game dev? Feel free to reach out!</p>
+                    <a href="mailto:vishal.chakradhari@example.com" class="btn primary-btn contact-email-btn">Email Me</a>
+                    </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://github.com/VishalChakradhari" target="_blank" rel="noopener noreferrer"><img src="assets/icons/github.svg" alt="GitHub" class="social-icon"></a>
+                <a href="https://linkedin.com/in/vishal-chakradhari" target="_blank" rel="noopener noreferrer"><img src="assets/icons/linkedin.svg" alt="LinkedIn" class="social-icon"></a>
+                <a href="https://instagram.com/vishal_chakradhari" target="_blank" rel="noopener noreferrer"><img src="assets/icons/instagram.svg" alt="Instagram" class="social-icon"></a>
+            </div>
+            <p>&copy; <span id="current-year"></span> Vishal Chakradhari. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
